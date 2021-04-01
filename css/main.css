@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;900&display=swap');
 
 :root {
-  --primary-color: #f60f20;
+  --primary-color: #840032;
   --secondary-color: #1b206e;
+  --hover-color: #f60f20;
+  --bg-color: #d6eeff;
 }
 /*HOME PAGE*/
 * {
@@ -62,7 +64,7 @@ p {
 }
 
 .nav ul li a:hover {
-  color: var(--primary-color);
+  color: var(--hover-color);
 }
 
 .nav .social-bar {
@@ -114,6 +116,11 @@ section.home {
   font-size: 2rem;
   font-weight: 700;
   z-index: 20;
+  color: var(--secondary-color);
+}
+.logo a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .toggle {
@@ -289,7 +296,7 @@ section.home {
 }
 
 .contact-form .row input[type='submit'] {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #fff;
   margin: 0;
   text-transform: uppercase;
@@ -302,7 +309,7 @@ section.home {
 /*CONTACT PAGE CONTACT INFO*/
 .contact-info {
   width: 350px;
-  background: #f9f9f9;
+  background: var(--bg-color);
   padding: 60px 40px 20px;
 }
 
@@ -319,6 +326,10 @@ section.home {
 
 .contact-info .info-box .details h4 {
   color: var(--secondary-color);
+}
+
+.contact-info .info-box .details a {
+  text-decoration: none;
 }
 
 .contact-info .info-box .details p,
